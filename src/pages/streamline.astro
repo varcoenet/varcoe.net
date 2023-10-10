@@ -1,0 +1,157 @@
+---
+import Layout from '../layouts/Layout.astro';
+import WorkPreview from '../components/work-preview.astro';
+---
+
+<Layout title="Varcoe - Streamline Servers">
+
+    <section class="casestudy" style="background:#8ABB48;">
+        <div class="container">
+            <div class="hero-center">
+                <img src="img/streamline/logo.svg" alt="Streamline Servers">
+                <h1>The perfect combination of gaming and functionality.</h1>
+                <img src="img/streamline/threepreviews.png" alt="" class="hero-center-img">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section class="casestudy-main">
+        <div class="container">
+            <div class="casestudy-main-left">
+                <h1>Streamline Servers</h1>
+                <h2>Minecraft and Game Server Hosting</h2>
+                <p>The guys over at Streamline Servers reached out to me looking for a new website that had a dark theme that appealed to both gaming customers and professionals. While we focused a bit more on the gaming side of things overall they were happy with the outcome of the design for all pages.</p>
+                <a href="https://streamline-servers.com/" target="_blank" class="button disabled">Link Coming Soon</a>
+            </div>
+            <div class="casestudy-main-right">
+                <ul>
+                    <li>Platform</li>
+                    <li>Desktop</li>
+                    <li>Mobile</li>
+                </ul>
+                <ul>
+                    <li>Services</li>
+                    <li>Website Design</li>
+                    <li>Responsive Coding</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section class="casestudy-preview">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab">
+                <li class="active"><a data-target="#colors" data-toggle="tab">Colors</a></li>
+                <li><a data-target="#typo" data-toggle="tab">Typography</a></li>
+                <li><a data-target="#icons" data-toggle="tab">Icons</a></li>
+            </ul>
+            <h2>Colors, Typography, and Icons.</h2>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="colors">
+                    <div class="colorbox" style="background:#8ABB48;">
+                        <h3>Primary<br>Color</h3>
+                        <span>#8ABB48</span>
+                    </div>
+                    <div class="colorbox" style="background:#e27d35;">
+                        <h3>Secondary<br>Color</h3>
+                        <span>#e27d35</span>
+                    </div>
+                    <div class="colorbox" style="background:#191919;">
+                        <h3>Tertiary<br>Color</h3>
+                        <span>#191919</span>
+                    </div>
+                    <div class="colorbox" style="background:#FFFFFF;color:#ced2db;">
+                        <h3 style="color:#afb4c1;">Header<br>Text</h3>
+                        <span>#FFFFFF</span>
+                    </div>
+                    <div class="colorbox" style="background:#C2C2C2;">
+                        <h3>Body<br>Text</h3>
+                        <span>#C2C2C2</span>
+                    </div>
+                </div>
+                <div class="tab-pane" id="typo">
+                    <div class="one-half">
+                        <h1 class="space-mono"><small>Space Mono</small>The quick fox jumps over the lazy dog.</h1>
+                    </div>
+                    <div class="one-half roboto lowercase">
+                        <h1><small>Roboto</small></h1>
+                        <p style="font-size:30px;line-height:36px;padding-top:16px;font-weight:400;">The quick fox jumps over the lazy dog.</p>
+                        <p style="font-size:24px;line-height:30px;font-weight:400;">The quick fox jumps over the lazy dog.</p>
+                        <p style="font-size:20px;line-height:26px;font-weight:400;">The quick fox jumps over the lazy dog.</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="icons">
+                  I decided on <a href="https://fontawesome.com/v6/" target="_blank">Font Awesome v6</a> for this project.
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+    </section>
+    <section class="cs-preview">
+        <div class="container">
+
+            <div class="small-header centered">
+                The Design
+            </div>
+            <h2>The new look</h2>
+            <div class="clickanywhere">Click any preview below to view in full<br>screen and additional pages</div>
+
+            <div class="one-third">
+                <a data-fancybox="gallery" href="img/streamline/two-big.png" class="fancybox"><img src="img/streamline/two.png"></a>
+            </div>
+            <div class="one-third">
+                <a data-fancybox="gallery" href="img/streamline/one-big.png" class="fancybox"><img src="img/streamline/one.png"></a>
+            </div>
+            <div class="one-third">
+                <a data-fancybox="gallery" href="img/streamline/three-big.png" class="fancybox"><img src="img/streamline/three.png"></a>
+            </div>
+            <div class="one-third" style="display:none;">
+                <a data-fancybox="gallery" href="img/streamline/four-big.png" class="fancybox"><img src="img/streamline/four-big.png"></a>
+            </div>
+            <div class="one-third" style="display:none;">
+                <a data-fancybox="gallery" href="img/streamline/five-big.png" class="fancybox"><img src="img/streamline/five-big.png"></a>
+            </div>
+
+            <div class="one-third" style="display:none;">
+                <a data-fancybox="gallery" href="img/streamline/six-big.png" class="fancybox"><img src="img/streamline/six-big.png"></a>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+
+
+	
+    <div class="inner-pagination work">
+	<div class="moonqubebox one-half left has-new">
+        <WorkPreview
+            title="Affordable cloud hosting to the moooon"
+            imglink="img/moonqube/logo.svg"
+            link="moonqube"
+            services="WEB DESIGN / CODING / DEV"
+            type="Cloud Provider"
+        />
+	</div>
+	<div class="ggserverbox one-half right">
+        <WorkPreview
+            title="The foundation for a GG Minecraft provider"
+            imglink="img/ggserver/logo.png"
+            link="ggservers"
+            services="WEB DESIGN / CODING"
+            type="Game Server Provider"
+        />
+	</div>
+</div>
+
+
+    <div class="clearfix"></div>
+  
+
+</Layout>

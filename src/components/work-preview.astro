@@ -1,0 +1,29 @@
+
+---
+interface Props {
+	link: string;
+	title: string;
+	imglink: string;
+	title: string;
+	services: string;
+	type: string;
+}
+
+const { link, imglink, title, services, type } = Astro.props;
+---
+
+
+			  <section class="work-preview">
+				<a class="container" href={link}>
+				  <span class="new">NEW</span>
+				  <div class="content-left">
+					<div class="work-logo">
+					  <img src={imglink} alt="">
+					</div>
+					<h2>{title}</h2>
+					<div class="work-footer">
+					  <span>{services}</span> {type}
+					</div>
+				  </div>
+				</a>
+			  </section>

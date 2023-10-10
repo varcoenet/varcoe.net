@@ -1,0 +1,192 @@
+---
+import Layout from '../layouts/Layout.astro';
+import WorkPreview from '../components/work-preview.astro';
+---
+
+<Layout title="Varcoe - About">
+
+
+    <section class="main-intro">
+        <div class="container">
+            <h1>About</h1>
+            <p>Web designer and front end developer. I know how to design a website, integrate it and make it responsive.</p>
+        </div>
+    </section>
+    
+    <section class="about-row">
+        <div class="container">
+            <div class="one-third">
+                <div class="small-header">
+                    <div class="header-number">01</div>
+                    The Story
+                </div>
+            </div>
+            <div class="two-thirds">
+                <h2>The designer you've been looking for.</h2>
+
+                <p>As a designer I focus on designing websites with the following characteristics in mind: user friendly, modern, clean, audience oriented, beautiful typography & color scheme, simple but effective content, and layout consistency.</p>
+                
+                <p style="padding-bottom:0px;"><strong>Formerly www.varcoedesign.com</strong></p>
+                
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    
+    <section class="about-row process">
+        <div class="container">
+            <div class="one-third">
+                <div class="small-header">
+                    <div class="header-number">02</div>
+                    My Process
+                </div>
+            </div>
+            <div class="tabs">
+            <div class="one-sixth">
+                <ul class="tab-links">
+                    <li id="link1" class="active"><a href="#tab1">01.</a><div class="verticalborder" style="display:block;"></div><div class="verticaltext" style="display:block;">Wireframing</div><div class="clearfix"></div></li>
+                    <li id="link2"><a href="#tab2">02.</a><div class="verticalborder"></div><div class="verticaltext">Design</div><div class="clearfix"></div></li>
+                    <li id="link3"><a href="#tab3">03.</a><div class="verticalborder"></div><div class="verticaltext">Development</div><div class="clearfix"></div></li>
+                    <li id="link4"><a href="#tab4">04.</a><div class="verticalborder"></div><div class="verticaltext">Launch</div><div class="clearfix"></div></li>
+                </ul>
+            </div>
+            <div class="one-half">
+                <div class="tab-content">
+                    <div id="tab1" class="tab active">
+                        <img src="img/wireframing.png" alt="Wire Framing">
+                        <h2>Sitemap and wireframe creation</h2>
+                        <p>With the scope of work well-defined, we can move onto wireframing the structural level of your website, defining how the content and features defined in scope definition will interrelate.</p>
+
+                        <p>This helps me with the development process to establish the basic structure of a page before moving onto visual design.  </p>
+                    </div>
+                    <div id="tab2" class="tab">
+                        <img src="img/design.png" alt="Design">
+                        <h2>Content creation and visual elements</h2>
+                        <p>With the site architecture and some content in place, we can start working on the visual design of your website. I'll work my magic, constantly playing around with different design styles, elements, colors, and typography to bring your website to life. </p>
+
+                        <p>I will remain in back and forth contact during this phase to make sure you get a website that you love! </p>
+                    </div>
+                    <div id="tab3" class="tab">
+                        <img src="img/development.png" alt="Development">
+                        <h2>Responsive coding and testing</h2>
+                        <p>By now, you've got all your pages designed and approved, so it's time to make it all work. I'll begin by coding the website responsively, making sure everything works correctly on a variety of devices.</p>
+
+                        <p>Than I test your website on a desktop, tablet, and mobile device by browsing manually to identify any problems, whether it's user experience issues or something as simple as a broken link. I'll than send it to you for review and if you spot anything out of place I'll get it fixed up.</p>
+                    </div>
+                    <div id="tab4" class="tab">
+                        <img src="img/launch.png" alt="Launch">
+                        <h2>Launch!</h2>
+                        <p>Now it’s time for everyone’s favorite part of the web design process: When everything has been thoroughly tested, and you’re happy with the site, it’s time to launch. Unless agreed upon prior you will be editing the content yourself, but I'm happy to help if you run into any issues.</p>
+
+                        <p>Don’t expect this to go perfectly. There may be still some elements that need fixing after you've added your content. Web design is a fluid and ongoing process that requires constant maintenance.</p>
+                    </div>
+                </div>
+                </div>
+            </div><div class="clearfix"></div>
+        </div>
+    </section>
+    
+    <section class="about-row">
+        <div class="container">
+            <div class="one-third">
+                <div class="small-header">
+                    <div class="header-number">03</div>
+                    Core Values
+                </div>
+            </div>
+            <div class="two-thirds">
+                <h2>Code of Conducts</h2>
+                
+                <div class="core-values">
+                    <div class="one-third">
+                        <img src="img/communication.png" alt="" class="img">
+                        <img src="img/communicationhover.png" alt="" class="hoverimg">
+                        
+                        <h5>Communication</h5>
+                        <p>Quick response and regular communication is the key for success.</p>
+                    </div>
+                    <div class="one-third">
+                        <img src="img/honesty.png" alt="" class="img">
+                        <img src="img/honestyhover.png" alt="" class="hoverimg">
+                        <h5>Honesty</h5>
+                        <p>We'll be honest with our skills, deadlines, and pricing.</p>
+                    </div>
+                    <div class="one-third">
+                        <img src="img/trustworthy.png" alt="" class="img">
+                        <img src="img/trustworthyhover.png" alt="" class="hoverimg">
+                        <h5>Trustworthy</h5>
+                        <p>You can trust me to deliver your project on time, always.</p>
+                    </div>
+                </div>
+                <div class="slider-arrows" style="display:none;">
+                    <a href="#" class="arrow right"></a>
+                    <a href="#" class="arrow left"></a>
+                    
+                </div>
+                
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('.tabs .tab-links a').on('click', function(e)  {
+                var currentAttrValue = jQuery(this).attr('href');
+
+                // Show/Hide Tabs
+                jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
+
+                // Change/remove current tab to active
+                jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+
+                
+                   //  jQuery(this).parent('.active').find('.verticaltext').slideToggle();
+                   //  jQuery(this).parent('.active').find('.verticalborder').slideToggle();
+                       
+                e.preventDefault();
+            });
+            
+            $(".tab-links #link2 a").click(function(){
+                $('#link2 .verticalborder').slideDown();
+                $('#link2 .verticaltext').slideDown();
+                $('#link1 .verticalborder').slideUp();
+                $('#link1 .verticaltext').slideUp();
+                $('#link3 .verticalborder').slideUp();
+                $('#link3 .verticaltext').slideUp();
+                $('#link4 .verticalborder').slideUp();
+                $('#link4 .verticaltext').slideUp();
+            });
+            $(".tab-links #link1 a").click(function(){
+                $('#link1 .verticalborder').slideDown();
+                $('#link1 .verticaltext').slideDown();
+                $('#link2 .verticalborder').slideUp();
+                $('#link2 .verticaltext').slideUp();
+                $('#link3 .verticalborder').slideUp();
+                $('#link3 .verticaltext').slideUp();
+                $('#link4 .verticalborder').slideUp();
+                $('#link4 .verticaltext').slideUp();
+            });
+            $(".tab-links #link3 a").click(function(){
+                $('#link1 .verticalborder').slideUp();
+                $('#link1 .verticaltext').slideUp();
+                $('#link2 .verticalborder').slideUp();
+                $('#link2 .verticaltext').slideUp();
+                $('#link3 .verticalborder').slideDown();
+                $('#link3 .verticaltext').slideDown();
+                $('#link4 .verticalborder').slideUp();
+                $('#link4 .verticaltext').slideUp();
+            });
+            $(".tab-links #link4 a").click(function(){
+                $('#link1 .verticalborder').slideUp();
+                $('#link1 .verticaltext').slideUp();
+                $('#link2 .verticalborder').slideUp();
+                $('#link2 .verticaltext').slideUp();
+                $('#link3 .verticalborder').slideUp();
+                $('#link3 .verticaltext').slideUp();
+                $('#link4 .verticalborder').slideDown();
+                $('#link4 .verticaltext').slideDown();
+            });
+            
+        });
+        </script>
+</Layout>

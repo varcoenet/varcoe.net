@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="213px" height="216px" viewBox="0 0 213 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-object-storage</title>
+    <defs>
+        <filter x="-22.6%" y="-22.2%" width="145.2%" height="144.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.00784313725   0 0 0 0 0.815686275   0 0 0 0 1  0 0 0 0.160101617 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="287.520259%" x2="50%" y2="-36.9529984%" id="linearGradient-2">
+            <stop stop-color="#03CEFE" offset="0%"></stop>
+            <stop stop-color="#2D9FF7" offset="52%"></stop>
+            <stop stop-color="#2878C7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-349.278846%" x2="50%" y2="347.475962%" id="linearGradient-3">
+            <stop stop-color="#228DE1" offset="0%"></stop>
+            <stop stop-color="#1564A2" offset="54.6000874%"></stop>
+            <stop stop-color="#164777" offset="99.9535621%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="287.520259%" x2="50%" y2="-36.9529984%" id="linearGradient-4">
+            <stop stop-color="#03CEFE" offset="0%"></stop>
+            <stop stop-color="#2D9FF7" offset="52%"></stop>
+            <stop stop-color="#2878C7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-924.202128%" x2="50%" y2="1404.25532%" id="linearGradient-5">
+            <stop stop-color="#07C9FD" offset="0%"></stop>
+            <stop stop-color="#2CA0F7" offset="52%"></stop>
+            <stop stop-color="#2878C7" offset="99.9371722%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="287.520259%" x2="50%" y2="-36.9529984%" id="linearGradient-6">
+            <stop stop-color="#03CEFE" offset="0%"></stop>
+            <stop stop-color="#2D9FF7" offset="52%"></stop>
+            <stop stop-color="#2878C7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Object-Storage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-322.000000, -174.000000)" fill-rule="nonzero">
+            <g id="Banner" transform="translate(342.000000, 187.800932)">
+                <g id="icon-object-storage" filter="url(#filter-1)" transform="translate(0.000000, 6.199068)">
+                    <g id="3552311_center_data_dimensional_dimensions_graph_icon">
+                        <path d="M0,124.301833 L0,158.613663 C0,168.249464 38.6269936,176 86.2613663,176 C133.895739,176 172.522733,168.20757 172.522733,158.571769 L172.522733,124.301833 L0,124.301833 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-3)" cx="86.2613663" cy="124.301833" rx="86.2613663" ry="17.4282314"></ellipse>
+                        <path d="M0,70.8440847 L0,105.19781 C0,114.833611 38.6269936,122.626041 86.2613663,122.626041 C133.895739,122.626041 172.522733,114.833611 172.522733,105.19781 L172.522733,70.8440847 L0,70.8440847 Z" id="Path" fill="url(#linearGradient-4)"></path>
+                        <path d="M86.2613663,122.626041 C116.425613,122.626041 142.945013,119.483932 158.362295,114.749821 C142.945013,110.015711 116.425613,106.873602 86.2613663,106.873602 C56.0971197,106.873602 29.5777196,110.015711 14.160438,114.749821 C29.5777196,119.483932 56.0971197,122.626041 86.2613663,122.626041 Z" id="Path" fill="url(#linearGradient-5)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-3)" cx="86.2613663" cy="70.8440847" rx="86.2613663" ry="17.4282314"></ellipse>
+                        <path d="M0,17.4282314 L0,51.7400619 C0,61.3758629 38.6269936,69.1682933 86.2613663,69.1682933 C133.895739,69.1682933 172.522733,61.3758629 172.522733,51.7400619 L172.522733,17.4282314 L0,17.4282314 Z" id="Path" fill="url(#linearGradient-6)"></path>
+                        <path d="M86.2613663,69.1682933 C116.425613,69.1682933 142.945013,66.0261842 158.362295,61.2920733 C142.945013,56.5579624 116.467508,53.4158534 86.2613663,53.4158534 C56.0552249,53.4158534 29.5777196,56.5579624 14.160438,61.2920733 C29.5777196,66.0261842 56.0971197,69.1682933 86.2613663,69.1682933 Z" id="Path" fill="url(#linearGradient-5)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-3)" cx="86.2613663" cy="17.4282314" rx="86.2613663" ry="17.4282314"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

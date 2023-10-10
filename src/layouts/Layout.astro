@@ -1,0 +1,47 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+
+		<meta name="description" content="Varcoe is a freelance web designer and programmer located in Windsor, Ontario, Canada. Find your business a home on the web today!">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+		
+        <link rel='stylesheet' media='only screen and (min-width: 1px) and (max-width: 767px)' href='/css/320px.css' />
+        <link rel='stylesheet' media='only screen and (min-width: 768px) and (max-width: 1023px)' href='/css/768px.css' />
+        <link rel='stylesheet' media='only screen and (min-width: 1024px) and (max-width: 1279px)' href='/css/1024.css' />
+
+		
+        <script src="/js/jquery.min.js" type="text/javascript"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<Header />
+
+			<slot />
+
+		<Footer />
+	</body>
+</html>
+

@@ -1,0 +1,157 @@
+
+---
+import Layout from '../layouts/Layout.astro';
+import WorkPreview from '../components/work-preview.astro';
+---
+
+<Layout title="Varcoe - Oasis Hosting">
+
+    
+
+    <section class="casestudy" style="background:#f33900;">
+        <div class="container">
+            <div class="hero-center">
+                <img src="img/oasis/logo.png" alt="Oasis Hosting">
+                <h1>An oasis of design for a game server provider</h1>
+                <img src="img/oasis/threepreviews.png" alt="" class="hero-center-img">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section class="casestudy-main">
+        <div class="container">
+            <div class="casestudy-main-left">
+                <h1>Oasis Hosting</h1>
+
+                <p>Oasis Hosting came to me with an existing design that was lacking a sense of style but they wanted something in a similar layout. I took their design, worked my magic, and this was the outcome. They were very pleased with the design.</p>
+                <a href="javascript:void(0)" class="button disabled" target="_blank">Link Coming Soon</a>
+            </div>
+            <div class="casestudy-main-right">
+                <ul>
+                    <li>Platform</li>
+                    <li>Desktop</li>
+                    <li>Mobile</li>
+                </ul>
+                <ul>
+                    <li>Services</li>
+                    <li>Website Design</li>
+                    <li>Responsive Coding</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section class="casestudy-preview">
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab">
+                <li class="active"><a data-target="#colors" data-toggle="tab">Colors</a></li>
+                <li><a data-target="#typo" data-toggle="tab">Typography</a></li>
+                <li><a data-target="#icons" data-toggle="tab">Icons</a></li>
+            </ul>
+            <h2>Colors, Typography, and Icons.</h2>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="colors">
+                    <div class="colorbox" style="background:#f33900;">
+                        <h3>Primary<br>Color</h3>
+                        <span>#f33900</span>
+                    </div>
+                    <div class="colorbox" style="background:#ff7a39;">
+                        <h3>Secondary<br>Color</h3>
+                        <span>#ff7a39</span>
+                    </div>
+                    <div class="colorbox" style="background:#83c11f;">
+                        <h3>Tertiary<br>Color</h3>
+                        <span>#83c11f</span>
+                    </div>
+                    <div class="colorbox" style="background:#FFFFFF;color:#ced2db;">
+                        <h3 style="color:#afb4c1;">Header<br>Text</h3>
+                        <span>#FFFFFF</span>
+                    </div>
+                    <div class="colorbox" style="background:#D8DFEA;">
+                        <h3>Body<br>Text</h3>
+                        <span>#D8DFEA</span>
+                    </div>
+                </div>
+                <div class="tab-pane" id="typo">
+                    <div class="one-half">
+                        <h1 class="dinnext"><small>DIN Next</small>The quick fox jumps over the lazy dog.</h1>
+                    </div>
+                    <div class="one-half mont">
+                        <h1><small>Montserrat</small></h1>
+                        <p style="font-size:30px;line-height:36px;padding-top:16px;font-weight:400;">The quick fox jumps over the lazy dog.</p>
+                        <p style="font-size:24px;line-height:30px;font-weight:400;">The quick fox jumps over the lazy dog.</p>
+                        <p style="font-size:20px;line-height:26px;font-weight:400;">The quick fox jumps over the lazy dog.</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="icons">
+
+                  I decided on <a href="https://fontawesome.com/v6/" target="_blank">Font Awesome v6</a> for this project.
+
+                </div>
+            </div>
+
+        </div>
+        <div class="clearfix"></div>
+    </section>
+    <section class="cs-preview">
+        <div class="container">
+
+            <div class="small-header centered">
+                The Design
+            </div>
+            <h2>The new look</h2>
+            <div class="clickanywhere">Click any preview below to view in full<br>screen and additional pages</div>
+
+            <div class="one-third">
+                <a data-fancybox="gallery" href="img/oasis/two-big.png" class="fancybox"><img src="img/oasis/two.png"></a>
+            </div>
+            <div class="one-third">
+                <a data-fancybox="gallery" href="img/oasis/one-big.png" class="fancybox"><img src="img/oasis/one.png"></a>
+            </div>
+            <div class="one-third">
+                <a data-fancybox="gallery" href="img/oasis/three-big.png" class="fancybox"><img src="img/oasis/three.png"></a>
+            </div>
+            <div class="one-third" style="display:none;">
+                <a data-fancybox="gallery" href="img/oasis/four-big.png" class="fancybox"><img src="img/oasis/four-big.png"></a>
+            </div>
+            <div class="one-third" style="display:none;">
+                <a data-fancybox="gallery" href="img/oasis/five-big.png" class="fancybox"><img src="img/oasis/five-big.png"></a>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+	
+    <div class="inner-pagination work">
+        <div class="shockbox one-half left">
+            <WorkPreview
+                title="A website designed to shock and awe"
+                imglink="img/shockhosting/logo.png"
+                link="shockhosting"
+                services="WEB DESIGN / CODING"
+                type="Hosting Provider"
+            />
+        </div>
+        <div class="speedybox one-half right">
+            <WorkPreview
+                title="Designed for speed, because of course it is"
+                imglink="img/speedy/logo.png"
+                link="speedypage"
+                services="WEB DESIGN / CODING"
+                type="Hosting Provider"
+            />
+        </div>
+    </div>
+    
+    
+        <div class="clearfix"></div>
+      
+    
+    </Layout>
+    

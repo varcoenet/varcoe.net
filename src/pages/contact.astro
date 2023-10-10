@@ -14,6 +14,11 @@ import WorkPreview from '../components/work-preview.astro';
                 </div>
 
                 <form name="contact" method="POST" action="/success" netlify>
+                    <p class="hidden">
+                        <label>
+                            Don't fill this out if you're human: <input name="bot-field" />
+                        </label>
+                    </p>
                     <p>
                       <label>Name <input type="text" name="name" id="name" /></label>
                     </p>

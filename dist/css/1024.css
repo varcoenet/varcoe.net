@@ -1,0 +1,89 @@
+.casestudy-text {
+    padding:0px !important;
+
+}
+
+.process .casestudy-text {
+    padding-right:60px !important;
+}
+
+.challenge .casestudy-text {
+    padding-left:60px !important;
+}
+
+.process .casestudy-image {
+padding-top:83px;
+}
+
+.mobile .casestudy-text {
+    margin-top:70px;
+}
+
+.mobile .casestudy-image {
+    text-align:left;
+}
+
+.mobile .casestudy-image img {
+    max-width:80%;
+    height:auto;
+}
+
+.spartanhost .process .casestudy-text{
+    margin-top:0px !important;
+}
+
+.spartanhost .process .casestudy-image {
+    padding-right:20px;
+}
+
+.spartanhost .challenge .casestudy-text {
+    margin-top:-8px !important;
+}
+
+
+
+.work-preview h2 {
+    padding-left:18px;
+}
+
+
+.hero-center-img {
+    max-width:94%;
+    height:auto;
+}
+
+.casestudy-preview {
+    padding:100px 40px;
+}
+
+
+.cs-preview p {
+    padding:0% 20%;
+}
+
+.cs-preview .one-third {
+    width:30%;
+    margin-right:5%;
+}
+
+
+
+.cs-preview .one-third:nth-child(6) {
+  margin-right:0%;
+}
+
+
+.cs-preview .one-third img {
+    max-width:100%;
+    height:auto;
+}
+
+.work-preview .content-left {
+    width:50%;
+}
+
+
+
+.flex-grid.two .col {
+    width:100%;
+}

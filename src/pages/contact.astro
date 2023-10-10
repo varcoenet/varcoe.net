@@ -12,28 +12,39 @@ import WorkPreview from '../components/work-preview.astro';
                 <div class="main-intro text-left">
                     <h1>Don't be shy,<br>talk to me.</h1>
                 </div>
-                <form
-                name="contact"
-                method="POST"
-                action="/"
-                data-netlify="true"
-              >
-                <p>
-                  <label>
-                    Email: <input type="text" name="name" />
-                  </label>
-                </p>
-                <p>
-                  <label>
-                    Message: <textarea name="message"></textarea>
-                  </label>
-                </p>
-                <div data-netlify-recaptcha="true"></div>
-                <p>
-                  <button type="submit">Send</button>
-                </p>
-              </form>
-
+                <form name="inscription" netlify>
+                    <div class="field">
+                        <label>Nom *</label>
+                        <div class="control">
+                            <input type="text" class="input is-medium" placeholder="Nom" name="firstname" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Prénom *</label>
+                        <div class="control">
+                            <input type="text" class="input is-medium" placeholder="Prénom" name="lastname" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Adresse email *</label>
+                        <div class="control">
+                            <input type="mail" class="input is-medium" placeholder="Adresse email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Téléphone</label>
+                        <div class="control">
+                            <input type="tel" class="input is-medium" placeholder="Téléphone" name="phone" minlength="10" >
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label>Société</label>
+                        <div class="control">
+                            <input type="text" class="input is-medium" placeholder="Société" name="company">
+                        </div>
+                    </div>
+                    <input type="submit" class="button is-fullwidth secondary-btn is-rounded" value="Commencer"/>
+                </form>
 
             </div> 
 

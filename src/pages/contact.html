@@ -1,0 +1,43 @@
+        <form 
+           name="contact" 
+           method="POST" 
+           id="my-contact-form" 
+           data-netlify="true" 
+         > 
+           <div class="flex flex-wrap"> 
+             <div class="col-span-12 grow form-group mb-2"> 
+               <input 
+                 type="text" 
+                 class="form-control" 
+                 name="name" 
+                 id="name" 
+                 placeholder={t("contact.name")} 
+                 required 
+               /> 
+             </div> 
+           </div> 
+           <div class="flex flex-wrap"> 
+             <div class="col-span-12 grow form-group mb-2"> 
+               <input 
+                 type="email" 
+                 class="form-control" 
+                 name="email" 
+                 id="email" 
+                 placeholder={t("contact.email")} 
+                 required 
+               /> 
+             </div> 
+           </div> 
+           <div class="flex flex-wrap"> 
+             <div class="col-span-12 grow form-group mb-2"> 
+               <textarea 
+                 class="form-control" 
+                 name="message" 
+                 placeholder={t("contact.message")} 
+                 required></textarea> 
+             </div> 
+           </div> 
+           <p id="submitBtn"> 
+             <button type="submit">{t("contact.submitBtn")}</button> 
+           </p> 
+         </form>

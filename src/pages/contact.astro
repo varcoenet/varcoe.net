@@ -13,54 +13,20 @@ import WorkPreview from '../components/work-preview.astro';
                     <h1>Don't be shy,<br>talk to me.</h1>
                 </div>
 
-                <form id="contact-form" method="post" role="form" novalidate="true" name="contact" netlify>
-                        <div class="messages"></div>
-                <div class="form controls">
-                    <div class="input-half form-group">
-                        <label for="form_name">Name</label>
-                            <input type="text" id="form_name" name="name" value="" class="input" required="required" data-error="A name is required." placeholder="Name/Business">
-                            <div class="help-block with-errors"></div>
-                    </div>
-
-                    <div class="input-half form-group" style="float:right;">
-                        <label for="form_email">Email</label>
-                            <input id="form_email" type="email" name="email" value="" class="input" required="required" data-error="Valid email is required." placeholder="Email">
-                            <div class="help-block with-errors"></div>
-                    </div>
-
-                    <div class="input-full form-group">
-                        <label for="form_budgetl">Budget</label>
-                        <select class="select" id="form_budget" name="budget" value="" required="required" data-error="Please choose budget.">
-                            
-                            <option name="budget" value="$2000-2500" selected="selected">$2000-$2500</option>
-                            <option name="budget" value="$3000-5000">$3000-$5000</option>
-                            <option name="budget" value="$5000+">$5000+</option>
-                        </select>
-                        <div class="help-block with-errors"></div>
-                    
-                    </div>
-
-                    <script type="text/javascript">
-                        var select = document.getElementById('form-budget');
-                        select.onchange = function() {
-                            select.className = 'selectactive';
-                        }
-                    </script>
-
-                    <div class="input-full form-group">
-                        <label for="form_message">Message</label>
-                            <textarea id="form_message" name="message" required="required" data-error="Please, leave us a message." class="textarea" placeholder="If you're requesting a quote please try to include as much information as possible about the project."></textarea>
-                            <div class="help-block with-errors"></div>
-                        
-                        
-                    </div>
-                    
-
-                    <div class="input-full">
-                        <input type="submit" value="Send Now" class="button disabled">
-                    </div>
-</div>
-                </form>
+                <form name="contact" netlify>
+                    <p>
+                      <label>Name <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                      <label>Email <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                      <label>Message <textarea name="message" placeholder="your message"></textarea>
+                    </p>
+                    <p>
+                      <button type="submit">Send</button>
+                    </p>
+                  </form>
 
 
             </div>

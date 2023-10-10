@@ -13,10 +13,28 @@ import WorkPreview from '../components/work-preview.astro';
                     <h1>Don't be shy,<br>talk to me.</h1>
                 </div>
 
-                <form data-netlify="true" name="contact" netlify-honeypot="bot-field">
-                    <input type="text" name="username" />
-                    <input type="email" name="email" />
-                    <input name="bot-field" type="hidden" />
+
+                <form name="contact" netlify method="POST"  data-netlify="true" action="POST" data-netlify-recaptcha="true">
+                    <div class="w3-section">
+                      <label>Name</label>
+                      <input class="w3-input w3-border" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                      <label>Email</label>
+                      <input class="w3-input w3-border" type="text" name="Email" required>
+                    </div>
+                    
+                    
+                    <button type="submit reset"  value="Send Message Reset" class="w3-button w3-block w3-black w3-margin-bottom">
+                        <div class="actions">
+                           
+                            <div class="field" data-netlify-recaptcha="true"></div>
+                          
+                        </div>
+                <br>
+                      <i class="fa fa-paper-plane"></i>Send Message
+                    
+                    </button>
                   </form>
 
 

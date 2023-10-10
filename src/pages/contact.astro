@@ -12,11 +12,11 @@ import WorkPreview from '../components/work-preview.astro';
                 <div class="main-intro text-left">
                     <h1>Don't be shy,<br>talk to me.</h1>
                 </div>
-
-                <form name="contact-form" data-netlify="true">
-                    <input type="hidden" name="form-name" value="contact-form" />
+                
+                <form name="contact-form" method="POST" data-netlify="true">
+                    
                     <div class="messages"></div>
-<div class="form controls">
+            <div class="form controls">
                 <div class="input-half form-group has-error has-danger">
                     <label for="form_name">Name</label>
                         <input type="text" id="form_name" name="name" value="" class="input" required="required" placeholder="Name/Business">
@@ -53,7 +53,7 @@ import WorkPreview from '../components/work-preview.astro';
                 <div class="input-full">
                     <input type="submit" value="Send Now" class="button disabled">
                 </div>
-</div>
+            </div>
             </form>
 
 

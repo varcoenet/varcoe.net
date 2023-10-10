@@ -2,6 +2,7 @@
 /about           /.netlify/functions/entry    200
 /jaxnap          /.netlify/functions/entry    200
 /contact         /.netlify/functions/entry    200
+/thankyou        /.netlify/functions/entry    200
 /services        /.netlify/functions/entry    200
 /moonqube        /.netlify/functions/entry    200
 /pronotary       /.netlify/functions/entry    200

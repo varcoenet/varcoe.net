@@ -13,48 +13,24 @@ import WorkPreview from '../components/work-preview.astro';
                     <h1>Don't be shy,<br>talk to me.</h1>
                 </div>
                 
-                <form name="contact-form" method="POST" data-netlify="true">
-                    
-                    <div class="messages"></div>
-            <div class="form controls">
-                <div class="input-half form-group has-error has-danger">
-                    <label for="form_name">Name</label>
-                        <input type="text" id="form_name" name="name" value="" class="input" required="required" placeholder="Name/Business">
-                </div>
-
-                <div class="input-half form-group" style="float:right;">
-                    <label for="form_email">Email</label>
-                        <input id="form_email" type="email" name="email" value="" class="input" required="required" placeholder="Email">
-                </div>
-
-                <div class="input-full form-group">
-                    <label for="form_budgetl">Budget</label>
-                    <select class="select" id="form_budget" name="budget" value="" required="required">
-                        
-                        <option name="budget" value="$2000-2500" selected="selected">$2000-$2500</option>
-                        <option name="budget" value="$3000-5000">$3000-$5000</option>
-                        <option name="budget" value="$5000+">$5000+</option>
-                    </select>
-                
-                </div>
-
-                <script type="text/javascript">
-                    var select = document.getElementById('form-budget');
-                    select.onchange = function() {
-                        select.className = 'selectactive';
-                    }
-                </script>
-
-                <div class="input-full form-group">
-                    <label for="form_message">Message</label>
-                        <textarea id="form_message" name="message" required="required" class="textarea" placeholder="If you're requesting a quote please try to include as much information as possible about the project."></textarea>
-                </div>
-                
-                <div class="input-full">
-                    <input type="submit" value="Send Now" class="button disabled">
-                </div>
-            </div>
-            </form>
+                <h2>Contact Form</h2>
+                <form method="post" name="Contact Form">
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <p>
+                    <label for="comments">Comments:</label><br/>
+                    <textarea name="comments" id="comments"></textarea>
+                </p>
+                <p>
+                    <input type="submit">
+                </p>
+                </form>
 
 
 

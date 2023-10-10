@@ -14,24 +14,53 @@ import WorkPreview from '../components/work-preview.astro';
                 </div>
                 
                 <h2>Contact Form</h2>
-                <form method="post" name="Contact Form">
+
+                <h2>Contact Form</h2>
+                <form method="post" name="My Contact Form 7" action="/thankyou.html" id="myForm" netlify ref="formTag" >
                 <p>
                     <label for="name">Name:</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" v-model="name">
                 </p>
                 <p>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" v-model="email">
                 </p>
                 <p>
                     <label for="comments">Comments:</label><br/>
-                    <textarea name="comments" id="comments"></textarea>
+                    <textarea name="comments" id="comments" v-model="comments"></textarea>
                 </p>
                 <p>
-                    <input type="submit">
+                    <input type="submit" @click.prevent="sendForm">
                 </p>
                 </form>
-
+            <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+            <script>
+            const app = new Vue({
+                el:'#myForm',
+                data:{
+                    name:'',
+                    email:'',
+                    comments:''
+                },
+                methods:{
+                    async sendForm() {
+                        let formName = this.$refs.formTag.getAttribute('name');
+                    
+                        let formData = new FormData();
+                        formData.append('name', this.name);
+                        formData.append('email', this.email);
+                        formData.append('comments', this.comments);
+                        formData.append('form-name', formName);
+                        let resp = await fetch('/', {
+                            method:'POST',
+                            body:formData
+                        });
+                        // assume ok, although double check
+                        alert('Submitted!');
+                    }
+                }
+            });
+            </script>
 
 
             </div> 

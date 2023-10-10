@@ -13,32 +13,29 @@ import WorkPreview from '../components/work-preview.astro';
                     <h1>Don't be shy,<br>talk to me.</h1>
                 </div>
 
-
-                <form name="contact" netlify method="POST"  data-netlify="true" action="POST" data-netlify-recaptcha="true">
-                    <div class="w3-section">
-                      <label>Name</label>
-                      <input class="w3-input w3-border" type="text" name="Name" required>
-                    </div>
-                    <div class="w3-section">
-                      <label>Email</label>
-                      <input class="w3-input w3-border" type="text" name="Email" required>
-                    </div>
-                    
-                    
-                    <button type="submit reset"  value="Send Message Reset" class="w3-button w3-block w3-black w3-margin-bottom">
-                        <div class="actions">
-                           
-                            <div class="field" data-netlify-recaptcha="true"></div>
-                          
-                        </div>
-                <br>
-                      <i class="fa fa-paper-plane"></i>Send Message
-                    
-                    </button>
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                      <label>Your Name: <input type="text" name="name" /></label>
+                    </p>
+                    <p>
+                      <label>Your Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                      <label>Your Role: <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                      </select></label>
+                    </p>
+                    <p>
+                      <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                      <button type="submit">Send</button>
+                    </p>
                   </form>
 
 
-            </div>
+            </div> 
 
             <div class="one-third">
                 <ul>

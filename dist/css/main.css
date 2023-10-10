@@ -3684,3 +3684,7 @@ textareachanged:focus,
 .inner-pagination .work-preview .content-left {
     width:100%;
 }
+
+.contact .footer {
+    display:none;
+}

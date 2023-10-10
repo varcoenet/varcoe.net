@@ -13,15 +13,15 @@ import WorkPreview from '../components/work-preview.astro';
                     <h1>Don't be shy,<br>talk to me.</h1>
                 </div>
 
-                <form name="contact" netlify>
+                <form name="contact" method="POST" action="/success" netlify>
                     <p>
-                      <label>Name <input type="text" name="name" /></label>
+                      <label>Name <input type="text" name="name" id="name" /></label>
                     </p>
                     <p>
-                      <label>Email <input type="email" name="email" /></label>
+                      <label>Email <input type="email" id="email" name="email" /></label>
                     </p>
                     <p>
-                      <label>Message <textarea name="message" placeholder="your message"></textarea>
+                      <label>Message <textarea id="message" wrap="soft" name="message" placeholder="your message" required></textarea>
                     </p>
                     <p>
                       <button type="submit">Send</button>
